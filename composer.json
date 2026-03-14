@@ -1,0 +1,26 @@
+{
+	"name": "raham/my-package",
+	"autoload": {
+		"psr-4": {
+			"Raham\\MyPackage\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "rahamatj",
+			"email": "32268831+rahamatj@users.noreply.github.com"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": "^8.0",
+		"illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Raham\\MyPackage\\DDDCRUDGeneratorServiceProvider"
+			]
+		}
+	}
+}
