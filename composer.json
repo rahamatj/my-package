@@ -1,5 +1,7 @@
 {
 	"name": "raham/my-package",
+	"version": "1.0.0",
+	"description": "A Laravel package for DDD CRUD generation.",
 	"autoload": {
 		"psr-4": {
 			"Raham\\MyPackage\\": "src/"
