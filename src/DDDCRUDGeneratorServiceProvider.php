@@ -3,6 +3,7 @@
 namespace Raham\MyPackage;
 
 use Illuminate\Support\ServiceProvider;
+use Raham\MyPackage\TestCommand;
 
 class DDDCRUDGeneratorServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,10 @@ class DDDCRUDGeneratorServiceProvider extends ServiceProvider
    */
   public function boot()
   {
-    //
+    if ($this->app->runningInConsole()) {
+      $this->commands([
+        TestCommand::class,
+      ]);
+    }
   }
 }
